@@ -704,13 +704,22 @@ function parseDetailResponse(html) {
     var movieDetail = JSON.parse(parseMovieDetail(html));
     var streamUrl = (movieDetail && movieDetail.servers.length > 0) ? movieDetail.servers[0].episodes[0].id : "";
 
+    var subtitles = [];
+    if (movieDetail && movieDetail.id) {
+        subtitles.push({
+            url: "subtitlecat://" + movieDetail.id + "?domain=https://www.subtitlecat.com",
+            language: "Vietnamese (SubtitleCat)",
+            format: "srt"
+        });
+    }
+
     return JSON.stringify({
         url: streamUrl,
         headers: {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             "Referer": "https://missav.ai/"
         },
-        subtitles: []
+        subtitles: subtitles
     });
 }
 
@@ -746,4 +755,3 @@ function parseCategoriesResponse(html) {
 
 function parseCountriesResponse(html) { return "[]"; }
 function parseYearsResponse(html) { return "[]"; }
-
