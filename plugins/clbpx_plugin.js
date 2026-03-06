@@ -350,6 +350,22 @@ function parseDetailResponse(htmlResponse, fallbackUrl) {
     try {
         var streamUrl = fallbackUrl || "";
 
+        // Bypass clbpx.html redirect logic
+        if (streamUrl.indexOf("clbpx.html") !== -1) {
+            var vMatch = streamUrl.match(/[?&]v=([^&#]+)/);
+            if (vMatch) {
+                var vParam = vMatch[1];
+                // Tìm domain của iframe trong htmlResponse (ví dụ: https://abysscdn.com)
+                var domainMatch = htmlResponse.match(/src="((https?:\/\/[^/]+)\/\?v=\$\{slug\})"/);
+                if (domainMatch && domainMatch[2]) {
+                    streamUrl = domainMatch[2] + "/?v=" + vParam;
+                } else if (htmlResponse.indexOf("abysscdn.com") !== -1) {
+                    // Fallback nếu regex không khớp nhưng thấy domain quen thuộc
+                    streamUrl = "https://abysscdn.com/?v=" + vParam;
+                }
+            }
+        }
+
         var customJs = "var style = document.createElement('style');" +
             "style.innerHTML = '#playback { display: none !important; }';" +
             "document.head.appendChild(style);";
