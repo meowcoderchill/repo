@@ -14,7 +14,7 @@ function getManifest() {
     });
 }
 
-// Token được tạo từ username: hung, password: hung
+// Token
 const AUTH_TOKEN = "eyJ1c2VybmFtZSI6Imh1bmciLCJwYXNzd29yZCI6Imh1bmciLCJ0cyI6MTc2NDcyNTIxNDA1NX0";
 
 function getHomeSections() {
