@@ -318,11 +318,11 @@ function parseDetailResponse(html, fallbackUrl) {
             url: streamUrl.replace(/&amp;/g, "&"),
             headers: {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Referer": "https://sextop1.page/",
-                "Allowed-Domains": "spexliu.top, streamqq.com",
-                "Custom-Js": "var attempt=0; var clbInt=setInterval(function(){var b=document.querySelector('.jw-display-icon-display, .jw-display-icon-container, img[src*=\\\"play\\\"], .play-btn, .vjs-big-play-button');if(b){try{b.click();b.style.display='none';clearInterval(clbInt);}catch(e){}}if(attempt++>20)clearInterval(clbInt);},500);"
+                "Referer": "https://sextop1.page/"
             },
-            subtitles: []
+            subtitles: [],
+            isEmbed: true,
+            embedRegex: "['\"](https?:\\/\\/[^\\s'\"]+\\.m3u8[^'\"]*)['\"]"
         });
     } catch (e) {
         return JSON.stringify({ url: fallbackUrl || "", headers: {}, subtitles: [] });
