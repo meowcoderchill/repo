@@ -1,6 +1,6 @@
 {
-    "latestVersionCode": 25,
-    "latestVersionName": "1.2.5",
-    "releaseNotes": "- Tối ưu lại cho TV Android\n- Giải phóng và tối ưu RAM\n- Thêm logic tự bỏ qua quảng cáo",
+    "latestVersionCode": 26,
+    "latestVersionName": "1.2.6",
+    "releaseNotes": "- Fix lỗi các nguồn phim không tự ẩn nút play\n- Fix lỗi điều khiển trên TV\n- Thêm logic tự bỏ qua quảng cáo",
     "downloadUrl": "https://raw.githubusercontent.com/youngbi/repo/main/app-release.apk"
 }
