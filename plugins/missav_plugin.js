@@ -137,7 +137,7 @@ function getUrlSearch(keyword, filtersJson) {
 
 function getUrlDetail(slug) {
     if (slug.indexOf("http") === 0) return slug;
-    if (slug.indexOf("/") === 0) return "https://missav123.com" + slug;
+    if (slug.indexOf("/") === 0) return "" + slug;
     return "/vi/" + slug;
 }
 
