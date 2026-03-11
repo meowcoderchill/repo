@@ -209,8 +209,14 @@ function parseMovieDetail(apiResponseJson) {
 
         // Extract rating from tmdb
         var ratingValue = 0;
-        if (movie.tmdb && movie.tmdb.vote_average) {
-            ratingValue = movie.tmdb.vote_average;
+        var tmdbId = "";
+        var tmdbSeason = 0;
+        var tmdbType = "";
+        if (movie.tmdb) {
+            if (movie.tmdb.vote_average) ratingValue = movie.tmdb.vote_average;
+            if (movie.tmdb.id) tmdbId = movie.tmdb.id;
+            if (movie.tmdb.season) tmdbSeason = parseInt(movie.tmdb.season, 10);
+            if (movie.tmdb.type) tmdbType = movie.tmdb.type;
         }
 
         return JSON.stringify({
@@ -230,7 +236,10 @@ function parseMovieDetail(apiResponseJson) {
             country: countries,
             director: directors,
             casts: actors,
-            status: movie.status || ""
+            status: movie.status || "",
+            tmdbId: String(tmdbId),
+            tmdbSeason: tmdbSeason || 0,
+            tmdbType: tmdbType || ""
         });
     } catch (error) { return "null"; }
 }
