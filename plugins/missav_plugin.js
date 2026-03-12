@@ -6,7 +6,7 @@ function getManifest() {
     return JSON.stringify({
         "id": "missav",
         "name": "MissAV",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "baseUrl": "https://missav123.com",
         "iconUrl": "https://stpaulclinic.vn/vaapp/plugins/missav.ico",
         "isEnabled": true,
@@ -137,7 +137,7 @@ function getUrlSearch(keyword, filtersJson) {
 
 function getUrlDetail(slug) {
     if (slug.indexOf("http") === 0) return slug;
-    if (slug.indexOf("/") === 0) return "https://missav.ai" + slug;
+    if (slug.indexOf("/") === 0) return "https://missav123.com" + slug;
     return "https://missav123.com/vi/" + slug;
 }
 
@@ -747,3 +747,4 @@ function parseCategoriesResponse(html) {
 
 function parseCountriesResponse(html) { return "[]"; }
 function parseYearsResponse(html) { return "[]"; }
+
