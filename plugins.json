@@ -47,7 +47,7 @@
             "id": "missav",
             "name": "MissAV 2",
             "version": "1.0.6",
-            "scriptUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/missav_plugin.js",
+            "scriptUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/missav2_plugin.js",
             "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/missav.ico"
         },
         {
