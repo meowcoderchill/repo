@@ -4,7 +4,7 @@
 
 function getManifest() {
     return JSON.stringify({
-        "id": "shiorisub",
+        "id": "ophim",
         "name": "Hayase Shiori - Subtitle",
         "version": "1.0.3",
         "baseUrl": "https://ophim1.com",
