@@ -4,7 +4,7 @@
 
 function getManifest() {
     return JSON.stringify({
-        "id": "HanakoTrans",
+        "id": "otruyen",
         "name": "Hanako Team - Comic Project",
         "version": "1.0.0",
         "baseUrl": "https://otruyenapi.com",
