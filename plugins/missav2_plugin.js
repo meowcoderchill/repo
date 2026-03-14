@@ -351,7 +351,7 @@ function parseListResponse(html) {
             var fullLinkMatch = itemHtml.match(/<a[^>]+href="([^"]+)"/);
             if (fullLinkMatch) {
                 var fullUrl = fullLinkMatch[1];
-                slug = fullUrl.replace("https://missav.ws", "").replace("https://missav.ws/", "/");
+                slug = fullUrl.replace("https://missav.media", "").replace("https://missav.media/", "/");
                 if (slug.indexOf("/") !== 0) slug = "/" + slug;
             }
 
