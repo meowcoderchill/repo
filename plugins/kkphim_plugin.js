@@ -4,8 +4,8 @@
 
 function getManifest() {
     return JSON.stringify({
-        "id": "kkphim",
-        "name": "KKPhim",
+        "id": "Hanako Vietsub",
+        "name": "Hanako Team Translators - Subtitle",
         "version": "1.0.1",
         "baseUrl": "https://phimapi.com",
         "iconUrl": "https://stpaulclinic.vn/vaapp/plugins/kkphim.png",
