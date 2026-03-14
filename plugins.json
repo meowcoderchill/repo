@@ -6,21 +6,21 @@
             "name": "OPhim",
             "version": "1.0.3",
             "scriptUrl": "https://raw.githubusercontent.com/meowcoderchill/repo/main/plugins/ophim_plugin.js",
-            "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/ophim.ico"
+            "iconUrl": "https://raw.githubusercontent.com/meowcoderchill/repo/main/plugins/ophim.ico"
         },
         {
             "id": "kkphim",
             "name": "KKPhim",
             "version": "1.0.1",
             "scriptUrl": "https://raw.githubusercontent.com/meowcoderchill/repo/main/plugins/kkphim_plugin.js",
-            "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/kkphim.png"
+            "iconUrl": "https://raw.githubusercontent.com/meowcoderchill/repo/main/plugins/kkphim.png"
         },
         {
             "id": "nguonc",
             "name": "Phim NguonC",
             "version": "1.0.7",
             "scriptUrl": "https://raw.githubusercontent.com/meowcoderchill/repo/main/plugins/nguonc_plugin.js",
-            "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/nguonC.png"
+            "iconUrl": "https://raw.githubusercontent.com/meowcoderchill/repo/main/plugins/nguonC.png"
         },
         {
             "id": "hh3d",
