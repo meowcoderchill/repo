@@ -278,7 +278,7 @@ function parseListResponse(html) {
             // Filter flags/icons just in case
             if (img.indexOf('flag') !== -1 || img.indexOf('icon') !== -1) img = "";
 
-            var slug = url.replace("https://missav.ws", "").replace("https://missav.ws/", "/");
+            var slug = url.replace("https://missav123.com", "").replace("https://missav123.com/", "/");
             if (slug.indexOf("/") !== 0) slug = "/" + slug;
 
             if (!foundActresses[slug]) {
@@ -311,7 +311,7 @@ function parseListResponse(html) {
                 var name = PluginUtils.cleanText(innerContent);
                 if (!name || name.length < 2) continue;
 
-                var slug = url.replace("https://missav.ws", "").replace("https://missav.ws/", "/");
+                var slug = url.replace("https://missav123.com", "").replace("https://missav123.com/", "/");
                 if (slug.indexOf("/") !== 0) slug = "/" + slug;
 
                 // Avoid duplicates
