@@ -4,7 +4,7 @@
 
 function getManifest() {
     return JSON.stringify({
-        "id": "HanakoTeam",
+        "id": "kkphim",
         "name": "Hanako Team Translators - Subtitle",
         "version": "1.0.1",
         "baseUrl": "https://phimapi.com",
