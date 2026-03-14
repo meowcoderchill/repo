@@ -4,7 +4,7 @@
 
 function getManifest() {
     return JSON.stringify({
-        "id": "ShioriHHPanda",
+        "id": "nguonc",
         "name": "Hayase Shiori x HHPanda - Subtitle",
         "version": "1.0.7",
         "baseUrl": "https://phim.nguonc.com",
