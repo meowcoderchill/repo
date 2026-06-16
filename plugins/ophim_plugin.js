@@ -5,7 +5,7 @@
 function getManifest() {
     return JSON.stringify({
         "id": "ophim",
-        "name": "OPhim",
+        "name": "Hayase Shiori - Subtitle",
         "version": "1.0.4",
         "baseUrl": "https://ophim1.com",
         "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/ophim.ico",
