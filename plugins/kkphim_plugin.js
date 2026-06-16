@@ -5,7 +5,7 @@
 function getManifest() {
     return JSON.stringify({
         "id": "kkphim",
-        "name": "KKPhim",
+        "name": "Hanako Team - Subtitle",
         "version": "1.0.1",
         "baseUrl": "https://phimapi.com",
         "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/kkphim.png",
