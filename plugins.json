@@ -119,6 +119,20 @@
             "version": "1.0.1",
             "scriptUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/misskon_plugin.js",
             "iconUrl": "https://misskon.com/favicon.ico"
+        },
+        {
+            "id": "rophim",
+            "name": "Rophim",
+            "version": "2.0",
+            "scriptUrl": "https://raw.githubusercontent.com/meowcoderchill/VAXAPPSCRIPT/refs/heads/main/Plugins/rophim.js",
+            "iconUrl": "https://phimvn2y.com/wp-content/themes/rophim-2/assets/images/logo.svg"
+        },
+        {
+            "id": "nguoncnew",
+            "name": "NguonC Khong Quang Cao",
+            "version": "1.59",
+            "scriptUrl": "https://raw.githubusercontent.com/meowcoderchill/repo/refs/heads/main/plugins/nguoncnew.js",
+            "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/nguonC.png"
         }
     ]
 }
